@@ -1,4 +1,4 @@
-name: swift-algorithms ci
+name: swift-windows-package
 on:
   push:
     branches:
@@ -24,6 +24,6 @@ jobs:
         with:
           name: swift-windows
           path: |
-            C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.1.0\Windows.platform\Developer\SDKs\Windows.sdk\
+            C:\Users\runneradmin\AppData\Local\Programs\Swift
 
 
