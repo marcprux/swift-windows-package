@@ -1,0 +1,22 @@
+name: swift-algorithms ci
+on:
+  push:
+    branches:
+      - '*'
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - '*'
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: "Setup Swift on Windows"
+        uses: compnerd/gha-setup-swift@main
+        with:
+          branch: swift-6.1-release
+          tag: 6.1-RELEASE
+      - name: "Test Swift Package on Windows"
+        run: swift test
+
