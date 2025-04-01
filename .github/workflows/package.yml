@@ -17,5 +17,13 @@ jobs:
         with:
           branch: swift-6.1-release
           tag: 6.1-RELEASE
-      - run: which swift
+      - name: Verify Swift
+        run: swift --verion
+      - name: Archive Swift
+        uses: actions/upload-artifact@v4
+        with:
+          name: swift-windows
+          path: |
+            C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.1.0\Windows.platform\Developer\SDKs\Windows.sdk\
+
 
