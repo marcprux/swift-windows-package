@@ -16,7 +16,7 @@ jobs:
         uses: compnerd/gha-setup-swift@main
         with:
           # https://download.swift.org/development/windows10/swift-DEVELOPMENT-SNAPSHOT-2025-03-28-a/swift-DEVELOPMENT-SNAPSHOT-2025-03-28-a-windows10.exe
-          #branch: swift-6.1-release
+          branch: main
           tag: swift-DEVELOPMENT-SNAPSHOT-2025-03-28-a
           #branch: swift-6.1-release
           #tag: 6.1-RELEASE
