@@ -15,8 +15,11 @@ jobs:
       - name: "Setup Swift on Windows"
         uses: compnerd/gha-setup-swift@main
         with:
-          branch: swift-6.1-release
-          tag: 6.1-RELEASE
+          # https://download.swift.org/development/windows10/swift-DEVELOPMENT-SNAPSHOT-2025-03-28-a/swift-DEVELOPMENT-SNAPSHOT-2025-03-28-a-windows10.exe
+          #branch: swift-6.1-release
+          tag: swift-DEVELOPMENT-SNAPSHOT-2025-03-28-a
+          #branch: swift-6.1-release
+          #tag: 6.1-RELEASE
       - name: Verify Swift
         run: swift --version
       - name: Archive Swift
